@@ -34,7 +34,8 @@ jobs:
         run: yarn add -D eslint && yarn run eslint
 
       - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
+        run: npx eslint . --ext .js
+#         uses: wearerequired/lint-action@v2
+#         with:
+#           eslint: true
         # prettier: true
