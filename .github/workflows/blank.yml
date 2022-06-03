@@ -31,17 +31,10 @@ jobs:
         run: npm init -y
       # ESLint and Prettier must be in `package.json`
       - name: Install dependencies
-        run: |
-          if [ -e yarn.lock ]; then
-          yarn add -D eslint
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
+        run: yarn add -D eslint && yarm run eslint
 
       - name: Run linters
         uses: wearerequired/lint-action@v2
         with:
           eslint: true
-          prettier: true
+        # prettier: true
