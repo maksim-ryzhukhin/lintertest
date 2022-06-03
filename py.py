@@ -1,12 +1,12 @@
 import time
 
-for i in range (10):
-    print (i)
+for i in range(10):
+    print(i)
 
 time.sleep(3)
 
-print ("first string")
+print("first string")
 
 time.sleep(3)
 
-print ("linter's test")
+print("linter's test")
