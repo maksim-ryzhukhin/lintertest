@@ -9,4 +9,4 @@ print ("first string")
 
 time.sleep(3)
 
-prin ("linter's test")
+print ("linter's test")
