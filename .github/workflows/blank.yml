@@ -30,20 +30,21 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install modules
-        run: yarn
+      - name: yarn eslint
+        run: ls -la && npm install eslint --save-dev
         
+      - name: npm init
+        run: ls -la && npm init -y
+
+      - name: npm init @eslint/config
+        run: ls -la && npm init @eslint/config
+
       - name: Run ESLint
         run: eslint . --ext .js,.jsx,.ts,.tsx
-      # - name: yarn eslint
-      #   run: ls -la && npm install eslint --save-dev
       
       
-      # - name: npm init
-      #   run: ls -la && npm init -y
-
-      # - name: npm init @eslint/config
-      #   run: ls -la && npm init @eslint/config
+      
+      
 
 
       # - name: run test1.js
