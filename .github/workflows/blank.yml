@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: 16
       - name: yarn eslint
-        run: yarn add eslimt --dev
+        run: ls -la && npm install eslint --save-dev
       # ESLint and Prettier must be in `package.json`
       
       
