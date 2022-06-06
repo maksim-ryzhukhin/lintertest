@@ -33,14 +33,14 @@ jobs:
       
       
       - name: npm init
-        run: npm init -y
+        run: ls -la && npm init -y
 
       - name: npm init @eslint/config
-        run: npm init @eslint/config
+        run: ls -la && npm init @eslint/config
 
 
       - name: run test1.js
-        run: npx eslint test.js
+        run: ls -la && npx eslint test.js
       # - name: Run linters
       #   uses: wearerequired/lint-action@v2
       #   with:
