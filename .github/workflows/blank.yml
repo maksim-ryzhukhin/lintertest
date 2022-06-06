@@ -27,20 +27,23 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16
-      - name: yarn eslint
-        run: ls -la && npm install eslint --save-dev
-      # ESLint and Prettier must be in `package.json`
+
+      - name: Install modules
+        run: yarn
+        
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
+      # - name: yarn eslint
+      #   run: ls -la && npm install eslint --save-dev
       
       
-      - name: npm init
-        run: ls -la && npm init -y
+      # - name: npm init
+      #   run: ls -la && npm init -y
 
-      - name: npm init @eslint/config
-        run: ls -la && npm init @eslint/config
+      # - name: npm init @eslint/config
+      #   run: ls -la && npm init @eslint/config
 
 
-      - name: run test1.js
-        run: ls -la && npx eslint test.js
-      # - name: Run linters
-      #   uses: wearerequired/lint-action@v2
-      #   with:
+      # - name: run test1.js
+      #   run: ls -la && npx eslint test.js
+      
