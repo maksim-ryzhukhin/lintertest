@@ -1,0 +1,20 @@
+{
+  "name": "lintertest",
+  "version": "1.0.0",
+  "description": "The repository for test create linter",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksim-ryzhukhin/lintertest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maksim-ryzhukhin/lintertest/issues"
+  },
+  "homepage": "https://github.com/maksim-ryzhukhin/lintertest#readme"
+}
