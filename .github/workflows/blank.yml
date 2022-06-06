@@ -34,7 +34,6 @@ jobs:
       
       - name: npm init
         run: npm init -y
-<<<<<<< HEAD
 
       - name: npm init @eslint/config
         run: npm init @eslint/config
