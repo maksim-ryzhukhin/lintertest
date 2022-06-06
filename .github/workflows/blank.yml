@@ -40,7 +40,7 @@ jobs:
 
 
       - name: run test1.js
-        run: npx eslint test1.js
+        run: npx eslint test.js
       # - name: Run linters
       #   uses: wearerequired/lint-action@v2
       #   with:
