@@ -51,7 +51,7 @@ jobs:
       run: npm ci
 
     - name: test
-      run: npx eslint test.js
+      run: npx eslint . --ext .js
 
     # - name: Run linters
     #   uses: wearerequired/lint-action@v2
